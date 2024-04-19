@@ -6,8 +6,8 @@ from concurrent.futures import ThreadPoolExecutor
 import pandas as pd
 
 # Carga de datos desde un archivo CSV
-datos_df = pd.read_csv('path_to_your_dataset.csv')
-datos = datos_df['column_name'].tolist()  # Asegúrate de ajustar 'column_name' al nombre de tu columna de datos
+datos_df = pd.read_csv('mushroom_cleaned.csv')
+datos = datos_df['stem-height'].tolist()  # Columna de altura del tallo
 
 # Definición de funciones para operaciones
 def calcular_estadisticas(datos):
